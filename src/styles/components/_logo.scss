@@ -1,0 +1,19 @@
+.logo {
+    @include verticalCenter;
+    margin: 5px auto;
+    width: 200px;
+    height: 10vh;
+    border-radius: 20px;
+    padding: 5px 0;
+    background-color: $white;
+    background: url(../../assets/img/logo.jpg) center/cover;
+
+    img {
+        height: 40px;
+    }
+
+    h3 {
+        margin-left: 10px;
+        color: $color-1;
+    }
+}

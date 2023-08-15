@@ -24,7 +24,9 @@ const Navigation = () => {
           to="/login"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
-          <li>Mon Compte</li>
+          <li className="account">
+            <img src="./3166.png" alt="Mon compte" className="account-image" />
+          </li>
         </NavLink>
       </ul>
     </div>
