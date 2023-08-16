@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navigation from "./Navigation";
+import { NavLink } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -36,7 +37,9 @@ function Login() {
           />
         </label>
         <br />
-        <button type="submit">Se connecter</button>
+        <NavLink to="/parrot">
+          <button type="submit">Se connecter</button>
+        </NavLink>
       </form>
     </div>
   );

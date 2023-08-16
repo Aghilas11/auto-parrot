@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Login from "./components/Login";
 import About from "./components/About";
 import Blog from "./components/Blog";
+import Parrot from "./components/Parrot";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="*" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/parrot" element={<Parrot />} />
         <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
