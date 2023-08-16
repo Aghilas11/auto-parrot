@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Navigation from "./Navigation";
 import { NavLink } from "react-router-dom";
+import Logo from "./Logo";
 
 function Login() {
-  const [email, setEmail] = useState("");
+  const [pseudo, setPseudo] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (event) => {
@@ -14,15 +15,16 @@ function Login() {
 
   return (
     <div>
+      <Logo />
       <Navigation />
       <h2>Se Connecter</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          Adresse e-mail:
+          pseudo
           <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            type="pseudo"
+            value={pseudo}
+            onChange={(e) => setPseudo(e.target.value)}
             required
           />
         </label>
