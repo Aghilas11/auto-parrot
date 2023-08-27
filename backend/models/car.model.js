@@ -3,28 +3,28 @@ const mongoose = require("mongoose");
 const carSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: true,
+    //required: true,
   },
   price: {
     type: Number,
-    required: true,
+    //required: true,
   },
   featuredImage: {
     type: String,
-    required: true,
+    //required: true,
   },
   year: {
     type: Number,
-    required: true,
+    //required: true,
   },
   mileage: {
     type: Number,
-    required: true,
+    //required: true,
   },
   fuelType: {
     type: String,
     enum: ["diesel", "essence", "hybride"],
-    required: true,
+    //required: true,
   },
   createdAt: {
     type: Date,

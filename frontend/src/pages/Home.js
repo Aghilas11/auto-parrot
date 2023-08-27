@@ -1,7 +1,7 @@
 import React from "react";
-import Login from "../components/Login";
 import Navigation from "../components/Navigation";
 import Logo from "../components/Logo";
+import CarsList from "../components/CarsList";
 
 const Home = () => {
   return (
@@ -9,6 +9,7 @@ const Home = () => {
       <Logo />
       <Navigation />
       <h1>acceuil</h1>
+      <CarsList />
     </div>
   );
 };
